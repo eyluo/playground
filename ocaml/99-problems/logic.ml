@@ -20,3 +20,9 @@ let table2 a b eq =
 
 (* 48 *)
 let table s eq = raise NotYetImplemented
+
+(* 49 *)
+let gray n = raise NotYetImplemented
+
+(* 50 *)
+let huffman fs = raise NotYetImplemented

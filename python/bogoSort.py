@@ -2,6 +2,8 @@ from random import shuffle
 from time import time
 from sys import argv
 
+# a meme implementation of bogoSort
+
 def bogoSort(R):
     t0 =  time()
     L = list(range(R))

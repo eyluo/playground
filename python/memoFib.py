@@ -1,6 +1,9 @@
 from sys import argv
 from time import time
 
+# regular nth Fibonacci calculator: the first with memoization, and the second
+# without. Uses time module to calculate difference in calculation times
+
 def nthMemoFib(n):
     def memoFib(n, d):
         if n in d:
