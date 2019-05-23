@@ -9,7 +9,11 @@
 
 #include "dll.h"
 
-class Stack : public LinkedList {
+class Stack {
+    private:
+
+    LinkedList dll;
+
     public:
 
     Stack(void);
@@ -17,6 +21,8 @@ class Stack : public LinkedList {
     bool insert(int data);
 
     int pop(void);
+
+    int size(void);
 
     void clear(void);
 };

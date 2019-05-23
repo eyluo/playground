@@ -8,19 +8,23 @@
 #include "inc/stack.h"
 
 Stack::Stack(void) {
-    this->size = 0;
-    this->head = NULL;
-    this->tail = NULL;
+    this->dll.size = 0;
+    this->dll.head = NULL;
+    this->dll.tail = NULL;
 }
 
 bool Stack::insert(int data) {
-    return this->add_to_end(data);
+    return this->dll.add_to_end(data);
 }
 
 int Stack::pop(void) {
-    return this->remove_from_end();
+    return this->dll.remove_from_end();
+}
+
+int Stack::size(void) {
+    return this->dll.size;
 }
 
 void Stack::clear(void) {
-    this->free_list();
+    this->dll.free_list();
 }

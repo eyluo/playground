@@ -8,19 +8,23 @@
 #include "inc/queue.h"
 
 Queue::Queue(void) {
-    this->size = 0;
-    this->head = NULL;
-    this->tail = NULL;
+    this->dll.size = 0;
+    this->dll.head = NULL;
+    this->dll.tail = NULL;
 }
 
 bool Queue::enqueue(int data) {
-    return this->add_to_end(data);
+    return this->dll.add_to_end(data);
 }
 
 int Queue::dequeue(void) {
-    return this->remove_from_front();
+    return this->dll.remove_from_front();
+}
+
+int Queue::size(void) {
+    return this->dll.size;
 }
 
 void Queue::clear(void) {
-    this->free_list();
+    this->dll.free_list();
 }

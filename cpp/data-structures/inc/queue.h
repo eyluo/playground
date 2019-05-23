@@ -9,7 +9,11 @@
 
 #include "dll.h"
 
-class Queue : public LinkedList {
+class Queue {
+    private:
+
+    LinkedList dll;
+
     public:
 
     Queue(void);
@@ -17,6 +21,8 @@ class Queue : public LinkedList {
     bool enqueue(int data);
 
     int dequeue(void);
+
+    int size(void);
 
     void clear(void);
 };

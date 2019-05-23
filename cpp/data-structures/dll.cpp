@@ -142,6 +142,4 @@ void LinkedList::free_list(void) {
         delete temp;
         temp = this->head;
     }
-
-    delete this;
 }

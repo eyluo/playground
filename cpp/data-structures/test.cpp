@@ -32,7 +32,7 @@ int main(void) {
             cout << "Failed to append at index " << i << ".\n";
             exit(1);
         }
-        if (qtest->size != i + 1) {
+        if (qtest->size() != i + 1) {
             cout << "Size is not correct at index " << i << ".\n";
             exit(1);
         }
@@ -66,7 +66,7 @@ int main(void) {
             cout << "Failed to append at index " << i << ".\n";
             exit(1);
         }
-        if (stest->size != i + 1) {
+        if (stest->size() != i + 1) {
             cout << "Size is not correct at index " << i << ".\n";
             exit(1);
         }
